@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Showcase | Sasmitha Kalpa - Portfolio</title>
+  <meta name="description" content="Explore Graphic Design (Posters, Leaflets, Flyers), Video Editing (Reels, Commercials), and UI/UX Design projects by Sasmitha Kalpa.">
+  
+  <!-- Favicon (Cloud-Safe Web Name) -->
+  <!-- Favicon - Full Cross-Browser Stack -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Glowing Background -->
+  <div class="ambient-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <!-- <img src="img/wingz-logo.png" alt="Wingz Logo" class="brand-logo-img"> -->
+        <span>Sasmitha<span class="gradient-text">Kalpa</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.88rem;">
+          <i class="fas fa-paper-plane"></i> Hire Me
+        </a>
+        <button class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       PAGE BANNER & FILTER SECTION
+       ========================================== -->
+  <section style="padding-top: 9rem; padding-bottom: 2rem;">
+    <div class="container text-center">
+      <div class="section-title reveal">
+        <span class="badge"><i class="fas fa-briefcase"></i> Portfolio Showcase</span>
+        <h2>Explore My Creative Work</h2>
+        <p>Swipe through project carousels or click the cart icon on any project section to place an instant order!</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-container reveal">
+        <button class="filter-btn active" data-filter="all"><i class="fas fa-border-all"></i> All Projects</button>
+        <button class="filter-btn" data-filter="graphic"><i class="fas fa-palette"></i> Graphic Design</button>
+        <button class="filter-btn" data-filter="video"><i class="fas fa-video"></i> Video Editing</button>
+        <button class="filter-btn" data-filter="uiux"><i class="fas fa-layer-group"></i> UI/UX Design</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROJECTS GRID GALLERY
+       ========================================== -->
+  <section class="section-padding" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="projects-grid">
+
+        <!-- Project 1: Graphic Design - Social Media Posters Carousel (poster-1.png, poster-2.png, poster-3.png) -->
+        <div class="glass-card project-card reveal" data-category="graphic" data-active-index="0">
+          <div class="card-carousel">
+            <div class="image-count-badge">
+              <i class="fas fa-images"></i> <span class="current-img-index">1/3</span>
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="img/projects/poster-1.png" alt="Social Media Poster 1">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/projects/poster-2.png" alt="Social Media Poster 2">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/projects/poster-3.png" alt="Social Media Poster 3">
+              </div>
+            </div>
+
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+
+            <div class="project-overlay">
+              <span class="category-badge">Graphic Design</span>
+              <button class="btn-cart" onclick="openOrderModal('Social Media Poster Design', 'Graphic Design')">
+                <i class="fas fa-cart-plus"></i> Order Poster
+              </button>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Social Media Posters</h3>
+              <span style="color: var(--accent-purple); font-size: 1.1rem;"><i class="fas fa-images"></i></span>
+            </div>
+            <p class="project-desc">Swipeable showcase of high-impact social media promotional posters designed for maximum audience engagement.</p>
+            <div class="project-footer">
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" onclick="openLightboxModal('Social Media Posters', 'Graphic Design', 'High-resolution promotional posters designed with custom lighting and typography.', ['img/projects/poster-1.png', 'img/projects/poster-2.png', 'img/projects/poster-3.png'], 0)">
+                <i class="fas fa-expand"></i> Preview Original
+              </button>
+              <button class="btn-cart" onclick="openOrderModal('Social Media Poster Design', 'Graphic Design')">
+                <i class="fas fa-cart-plus"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Graphic Design - Leaflet Designs Carousel (leaflet-1.png, leaflet-2.png) -->
+        <div class="glass-card project-card reveal" data-category="graphic" data-active-index="0">
+          <div class="card-carousel">
+            <div class="image-count-badge">
+              <i class="fas fa-images"></i> <span class="current-img-index">1/2</span>
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="img/projects/leaflet-1.png" alt="Leaflet Design 1">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/projects/leaflet-2.png" alt="Leaflet Design 2">
+              </div>
+            </div>
+
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+
+            <div class="project-overlay">
+              <span class="category-badge">Graphic Design</span>
+              <button class="btn-cart" onclick="openOrderModal('Leaflet Design Service', 'Graphic Design')">
+                <i class="fas fa-cart-plus"></i> Order Leaflet
+              </button>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Leaflet Designs</h3>
+              <span style="color: var(--accent-purple); font-size: 1.1rem;"><i class="fas fa-book-open"></i></span>
+            </div>
+            <p class="project-desc">Swipeable showcase of modern promotional leaflets crafted for corporate branding and marketing campaigns.</p>
+            <div class="project-footer">
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" onclick="openLightboxModal('Leaflet Designs', 'Graphic Design', 'Professional event and corporate leaflet layouts formatted for print and digital media.', ['img/projects/leaflet-1.png', 'img/projects/leaflet-2.png'], 0)">
+                <i class="fas fa-expand"></i> Preview Original
+              </button>
+              <button class="btn-cart" onclick="openOrderModal('Leaflet Design Service', 'Graphic Design')">
+                <i class="fas fa-cart-plus"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Graphic Design - Flyer Designs Carousel (flyer-1.png, flyer-2.png) -->
+        <div class="glass-card project-card reveal" data-category="graphic" data-active-index="0">
+          <div class="card-carousel">
+            <div class="image-count-badge">
+              <i class="fas fa-images"></i> <span class="current-img-index">1/2</span>
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="carousel-slides">
+              <div class="carousel-slide">
+                <img src="img/projects/flyer-1.png" alt="Flyer Design 1">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/projects/flyer-2.png" alt="Flyer Design 2">
+              </div>
+            </div>
+
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+
+            <div class="project-overlay">
+              <span class="category-badge">Graphic Design</span>
+              <button class="btn-cart" onclick="openOrderModal('Flyer Design Service', 'Graphic Design')">
+                <i class="fas fa-cart-plus"></i> Order Flyer
+              </button>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Flyer Designs</h3>
+              <span style="color: var(--accent-purple); font-size: 1.1rem;"><i class="fas fa-file-invoice"></i></span>
+            </div>
+            <p class="project-desc">Swipeable showcase of high-converting business and event flyers formatted with clean visual hierarchy.</p>
+            <div class="project-footer">
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" onclick="openLightboxModal('Flyer Designs', 'Graphic Design', 'High-impact marketing flyers designed with custom composition for digital ads and print.', ['img/projects/flyer-1.png', 'img/projects/flyer-2.png'], 0)">
+                <i class="fas fa-expand"></i> Preview Original
+              </button>
+              <button class="btn-cart" onclick="openOrderModal('Flyer Design Service', 'Graphic Design')">
+                <i class="fas fa-cart-plus"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Video Editing - Reel -->
+        <div class="glass-card project-card reveal" data-category="video">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" alt="Fitness Product Reel" class="project-img">
+            <div class="project-overlay">
+              <span class="category-badge" style="background: rgba(6, 182, 212, 0.25); border-color: rgba(6, 182, 212, 0.45);">Video Editing</span>
+              <button class="btn-cart" onclick="openOrderModal('Fitness Product Short-Form Reel', 'Video Editing')">
+                <i class="fas fa-cart-plus"></i> Order Video
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Fitness Brand Reel</h3>
+              <span style="color: var(--accent-cyan); font-size: 1.1rem;"><i class="fab fa-tiktok"></i></span>
+            </div>
+            <p class="project-desc">Fast-paced 15-second promo video edit designed for TikTok & Reels with energetic sound sync and motion titles.</p>
+            <div class="project-footer">
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" onclick="openLightboxModal('Fitness Brand Reel', 'Video Editing', 'Fast-paced 15-second promo video edit designed for TikTok & Reels with energetic sound sync and motion titles.', ['https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80'], 0)">
+                <i class="fas fa-play-circle"></i> Preview
+              </button>
+              <button class="btn-cart" onclick="openOrderModal('Fitness Product Short-Form Reel', 'Video Editing')">
+                <i class="fas fa-cart-plus"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Video Editing - Commercial -->
+        <div class="glass-card project-card reveal" data-category="video">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80" alt="Cinematic Commercial Edit" class="project-img">
+            <div class="project-overlay">
+              <span class="category-badge" style="background: rgba(6, 182, 212, 0.25); border-color: rgba(6, 182, 212, 0.45);">Video Editing</span>
+              <button class="btn-cart" onclick="openOrderModal('Cinematic Brand Commercial Video', 'Video Editing')">
+                <i class="fas fa-cart-plus"></i> Order Video
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Luxury Resort Commercial</h3>
+              <span style="color: var(--accent-cyan); font-size: 1.1rem;"><i class="fas fa-film"></i></span>
+            </div>
+            <p class="project-desc">Cinematic travel video montage with DaVinci Resolve color grading, slow-motion drone transitions, and ambient soundscapes.</p>
+            <div class="project-footer">
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" onclick="openLightboxModal('Luxury Resort Commercial', 'Video Editing', 'Cinematic travel video montage with DaVinci Resolve color grading, slow-motion drone transitions, and ambient soundscapes.', ['https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80'], 0)">
+                <i class="fas fa-play-circle"></i> Preview
+              </button>
+              <button class="btn-cart" onclick="openOrderModal('Cinematic Brand Commercial Video', 'Video Editing')">
+                <i class="fas fa-cart-plus"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: UI/UX Design - SaaS Platform -->
+        <div class="glass-card project-card reveal" data-category="uiux">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Crypto Exchange SaaS" class="project-img">
+            <div class="project-overlay">
+              <span class="category-badge" style="background: rgba(244, 63, 94, 0.25); border-color: rgba(244, 63, 94, 0.45);">UI/UX Design</span>
+              <button class="btn-cart" onclick="openOrderModal('Crypto Trading Dashboard UI Design', 'UI/UX Design')">
+                <i class="fas fa-cart-plus"></i> Order UI Design
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Crypto Exchange SaaS</h3>
+              <span style="color: var(--accent-rose); font-size: 1.1rem;"><i class="fas fa-desktop"></i></span>
+            </div>
+            <p class="project-desc">Complete web platform design featuring dark glassmorphism analytics cards, live charts, and wallet controls.</p>
+            <div class="project-footer">
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" onclick="openLightboxModal('Crypto Exchange SaaS UI', 'UI/UX Design', 'Complete web platform design featuring dark glassmorphism analytics cards, live charts, and wallet controls.', ['https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80'], 0)">
+                <i class="fas fa-expand"></i> Preview
+              </button>
+              <button class="btn-cart" onclick="openOrderModal('Crypto Trading Dashboard UI Design', 'UI/UX Design')">
+                <i class="fas fa-cart-plus"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: UI/UX Design - Mobile App Prototype -->
+        <div class="glass-card project-card reveal" data-category="uiux">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Neobanking App Prototype" class="project-img">
+            <div class="project-overlay">
+              <span class="category-badge" style="background: rgba(244, 63, 94, 0.25); border-color: rgba(244, 63, 94, 0.45);">UI/UX Design</span>
+              <button class="btn-cart" onclick="openOrderModal('Mobile App UI & Prototype', 'UI/UX Design')">
+                <i class="fas fa-cart-plus"></i> Order UI Design
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Neobanking Mobile App</h3>
+              <span style="color: var(--accent-rose); font-size: 1.1rem;"><i class="fas fa-mobile-alt"></i></span>
+            </div>
+            <p class="project-desc">iOS & Android mobile banking app wireframes and interactive Figma prototype featuring biometrics and instant transfer flows.</p>
+            <div class="project-footer">
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" onclick="openLightboxModal('Neobanking Mobile App', 'UI/UX Design', 'iOS & Android mobile banking app wireframes and interactive Figma prototype featuring biometrics and instant transfer flows.', ['https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80'], 0)">
+                <i class="fas fa-expand"></i> Preview
+              </button>
+              <button class="btn-cart" onclick="openOrderModal('Mobile App UI & Prototype', 'UI/UX Design')">
+                <i class="fas fa-cart-plus"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       UNCROPPED LIGHTBOX PREVIEW MODAL COMPONENT
+       ========================================== -->
+  <div class="modal-overlay" id="lightboxModal">
+    <div class="modal-card glass-card lightbox-card">
+      <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      <div class="lightbox-body">
+        <div class="lightbox-media">
+          <img src="" alt="Full Quality Uncropped Preview">
+        </div>
+        <div class="lightbox-content">
+          <div>
+            <span class="category-badge lightbox-category" style="margin-bottom: 0.75rem; display: inline-block;">Category</span>
+            <h3 class="lightbox-title" style="font-size: 1.6rem; margin-bottom: 0.75rem;">Project Title</h3>
+            <p class="lightbox-desc" style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">Description text...</p>
+          </div>
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-glass);">
+            <button class="btn btn-primary lightbox-order-btn" style="width: 100%;">
+              <i class="fas fa-shopping-cart"></i> Place Order For Similar Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       QUICK ORDER CART MODAL COMPONENT
+       ========================================== -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+
+      <div class="modal-header">
+        <span class="badge"><i class="fas fa-shopping-bag"></i> Place Order / Inquiry</span>
+        <h3>Confirm Your Order</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">
+          Fill in your details below. Sasmitha will instantly receive your email request and contact you back via WhatsApp/Email!
+        </p>
+      </div>
+
+      <div class="order-item-banner">
+        <i class="fas fa-box-open"></i>
+        <div class="order-item-info">
+          <h4 id="orderItemTitle">Selected Service</h4>
+          <span id="orderItemCategory">Category</span>
+        </div>
+      </div>
+
+      <form id="quickOrderForm">
+        <div class="form-group">
+          <label class="form-label" for="orderName"><i class="fas fa-user"></i> Full Name *</label>
+          <input type="text" id="orderName" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="orderWhatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Number *</label>
+            <input type="tel" id="orderWhatsapp" class="form-control" placeholder="+94 7X XXX XXXX" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="orderEmail"><i class="fas fa-envelope"></i> Email Address *</label>
+            <input type="email" id="orderEmail" class="form-control" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderNotes"><i class="fas fa-comment-dots"></i> Project Brief / Notes (Optional)</label>
+          <textarea id="orderNotes" class="form-control" placeholder="Describe your vision, timeline, or any specific requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          <i class="fas fa-paper-plane"></i> Confirm & Notify Sasmitha
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <!-- <img src="img/wingz-logo.png" alt="Wingz Logo" class="brand-logo-img"> -->
+            <span>Sasmitha<span class="gradient-text">Kalpa</span></span>
+          </a>
+          <p>
+            Freelance Graphic Designer, Video Editor, and UI/UX Designer crafting visual excellence for global clients.
+          </p>
+          <div class="social-links">
+            <a href="https://www.youtube.com/@Era_sasmitha" class="icon-btn" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/iam_sasmitha_/" class="icon-btn" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100094303121475" class="icon-btn" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/sasmitha-kalpa-29b8452bb/" class="icon-btn" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Sasmitha-Dev" class="icon-btn" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#graphic-design">Graphic Design</a></li>
+            <li><a href="services.html#video-editing">Video Editing</a></li>
+            <li><a href="services.html#ui-ux">UI/UX Design</a></li>
+            <li><a href="contact.html">Custom Quotation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Education & Bio</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            <strong>BSc (Hons) Software Engineering with Multimedia</strong><br>
+            Limkokwing University, Malaysia<br><br>
+            📍 Based in Sri Lanka 🇱🇰
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sasmitha Kalpa. All Rights Reserved.</p>
+        <p>Built with HTML5, CSS Glassmorphism & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
