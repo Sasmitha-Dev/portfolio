@@ -267,11 +267,10 @@
         <!-- Project 4: Video Editing - Reel -->
         <div class="glass-card project-card reveal" data-category="video">
           <div class="project-media" style="position: relative;">
-            <video controls class="project-img" 
-              style="width: 100%; aspect-ratio: 9 / 16; border: none; border-radius: var(--radius-lg) var(--radius-lg) 0 0; object-fit: cover; background: #000;">
-              <source src="https://drive.google.com/uc?export=download&id=1GPX_QCySlDMme63bpTPPLwx0bXF-_V6p" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <iframe src="https://drive.google.com/file/d/1GPX_QCySlDMme63bpTPPLwx0bXF-_V6p/view?usp=drive_link"
+              title="Short Advertisement Reel" class="project-img"
+              style="width: 100%; aspect-ratio: 9 / 16; border: none; border-radius: var(--radius-lg) var(--radius-lg) 0 0;"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
             <div class="project-overlay" style="pointer-events: none;">
               <span class="category-badge"
                 style="background: rgba(6, 182, 212, 0.25); border-color: rgba(6, 182, 212, 0.45);">Video Editing</span>
@@ -399,160 +398,160 @@
     </div>
   </section>
 
-        <!-- ==========================================
+  <!-- ==========================================
        UNCROPPED LIGHTBOX PREVIEW MODAL COMPONENT
        ========================================== -->
-        <div class="modal-overlay" id="lightboxModal">
-          <div class="modal-card glass-card lightbox-card">
-            <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
-            <div class="lightbox-body">
-              <div class="lightbox-media">
-                <img src="" alt="Full Quality Uncropped Preview">
-              </div>
-              <div class="lightbox-content">
-                <div>
-                  <span class="category-badge lightbox-category"
-                    style="margin-bottom: 0.75rem; display: inline-block;">Category</span>
-                  <h3 class="lightbox-title" style="font-size: 1.6rem; margin-bottom: 0.75rem;">Project Title</h3>
-                  <p class="lightbox-desc" style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
-                    Description
-                    text...</p>
-                </div>
-                <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-glass);">
-                  <button class="btn btn-primary lightbox-order-btn" style="width: 100%;">
-                    <i class="fas fa-shopping-cart"></i> Place Order For Similar Project
-                  </button>
-                </div>
-              </div>
-            </div>
+  <div class="modal-overlay" id="lightboxModal">
+    <div class="modal-card glass-card lightbox-card">
+      <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      <div class="lightbox-body">
+        <div class="lightbox-media">
+          <img src="" alt="Full Quality Uncropped Preview">
+        </div>
+        <div class="lightbox-content">
+          <div>
+            <span class="category-badge lightbox-category"
+              style="margin-bottom: 0.75rem; display: inline-block;">Category</span>
+            <h3 class="lightbox-title" style="font-size: 1.6rem; margin-bottom: 0.75rem;">Project Title</h3>
+            <p class="lightbox-desc" style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+              Description
+              text...</p>
+          </div>
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-glass);">
+            <button class="btn btn-primary lightbox-order-btn" style="width: 100%;">
+              <i class="fas fa-shopping-cart"></i> Place Order For Similar Project
+            </button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- ==========================================
+  <!-- ==========================================
        QUICK ORDER CART MODAL COMPONENT
        ========================================== -->
-        <div class="modal-overlay" id="orderModal">
-          <div class="modal-card glass-card">
-            <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
 
-            <div class="modal-header">
-              <span class="badge"><i class="fas fa-shopping-bag"></i> Place Order / Inquiry</span>
-              <h3>Confirm Your Order</h3>
-              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">
-                Fill in your details below. Sasmitha will instantly receive your email request and contact you back via
-                WhatsApp/Email!
-              </p>
-            </div>
+      <div class="modal-header">
+        <span class="badge"><i class="fas fa-shopping-bag"></i> Place Order / Inquiry</span>
+        <h3>Confirm Your Order</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">
+          Fill in your details below. Sasmitha will instantly receive your email request and contact you back via
+          WhatsApp/Email!
+        </p>
+      </div>
 
-            <div class="order-item-banner">
-              <i class="fas fa-box-open"></i>
-              <div class="order-item-info">
-                <h4 id="orderItemTitle">Selected Service</h4>
-                <span id="orderItemCategory">Category</span>
-              </div>
-            </div>
+      <div class="order-item-banner">
+        <i class="fas fa-box-open"></i>
+        <div class="order-item-info">
+          <h4 id="orderItemTitle">Selected Service</h4>
+          <span id="orderItemCategory">Category</span>
+        </div>
+      </div>
 
-            <form id="quickOrderForm">
-              <div class="form-group">
-                <label class="form-label" for="orderName"><i class="fas fa-user"></i> Full Name *</label>
-                <input type="text" id="orderName" class="form-control" placeholder="e.g. John Doe" required>
-              </div>
+      <form id="quickOrderForm">
+        <div class="form-group">
+          <label class="form-label" for="orderName"><i class="fas fa-user"></i> Full Name *</label>
+          <input type="text" id="orderName" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
 
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                <div class="form-group">
-                  <label class="form-label" for="orderWhatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Number
-                    *</label>
-                  <input type="tel" id="orderWhatsapp" class="form-control" placeholder="+94 7X XXX XXXX" required>
-                </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="orderWhatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Number
+              *</label>
+            <input type="tel" id="orderWhatsapp" class="form-control" placeholder="+94 7X XXX XXXX" required>
+          </div>
 
-                <div class="form-group">
-                  <label class="form-label" for="orderEmail"><i class="fas fa-envelope"></i> Email Address *</label>
-                  <input type="email" id="orderEmail" class="form-control" placeholder="name@example.com" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="orderNotes"><i class="fas fa-comment-dots"></i> Project Brief / Notes
-                  (Optional)</label>
-                <textarea id="orderNotes" class="form-control"
-                  placeholder="Describe your vision, timeline, or any specific requirements..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
-                <i class="fas fa-paper-plane"></i> Confirm & Notify Sasmitha
-              </button>
-            </form>
+          <div class="form-group">
+            <label class="form-label" for="orderEmail"><i class="fas fa-envelope"></i> Email Address *</label>
+            <input type="email" id="orderEmail" class="form-control" placeholder="name@example.com" required>
           </div>
         </div>
 
-        <!-- ==========================================
+        <div class="form-group">
+          <label class="form-label" for="orderNotes"><i class="fas fa-comment-dots"></i> Project Brief / Notes
+            (Optional)</label>
+          <textarea id="orderNotes" class="form-control"
+            placeholder="Describe your vision, timeline, or any specific requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          <i class="fas fa-paper-plane"></i> Confirm & Notify Sasmitha
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
        FOOTER
        ========================================== -->
-        <footer class="footer">
-          <div class="container">
-            <div class="footer-grid">
-              <div class="footer-brand">
-                <a href="./" class="logo">
-                  <!-- <img src="img/wingz-logo.png" alt="Wingz Logo" class="brand-logo-img"> -->
-                  <span>Sasmitha<span class="gradient-text">Kalpa</span></span>
-                </a>
-                <p>
-                  Freelance Graphic Designer, Video Editor, and UI/UX Designer crafting visual excellence for global
-                  clients.
-                </p>
-                <div class="social-links">
-                  <a href="https://www.youtube.com/@Era_sasmitha" class="icon-btn" title="YouTube" target="_blank"
-                    rel="noopener"><i class="fab fa-youtube"></i></a>
-                  <a href="https://www.instagram.com/iam_sasmitha_/" class="icon-btn" title="Instagram" target="_blank"
-                    rel="noopener"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.facebook.com/profile.php?id=100094303121475" class="icon-btn" title="Facebook"
-                    target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.linkedin.com/in/sasmitha-kalpa-29b8452bb/" class="icon-btn" title="LinkedIn"
-                    target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="https://github.com/Sasmitha-Dev" class="icon-btn" title="GitHub" target="_blank"
-                    rel="noopener"><i class="fab fa-github"></i></a>
-                </div>
-              </div>
-
-              <div class="footer-column">
-                <h4>Navigation</h4>
-                <ul class="footer-links">
-                  <li><a href="./">Home</a></li>
-                  <li><a href="services">Services</a></li>
-                  <li><a href="projects">Projects</a></li>
-                  <li><a href="contact">Contact</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-column">
-                <h4>Services</h4>
-                <ul class="footer-links">
-                  <li><a href="services#graphic-design">Graphic Design</a></li>
-                  <li><a href="services#video-editing">Video Editing</a></li>
-                  <li><a href="services#ui-ux">UI/UX Design</a></li>
-                  <li><a href="contact">Custom Quotation</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-column">
-                <h4>Education & Bio</h4>
-                <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
-                  <strong>BSc (Hons) Software Engineering with Multimedia</strong><br>
-                  Limkokwing University, Malaysia<br><br>
-                  📍 Based in Sri Lanka 🇱🇰
-                </p>
-              </div>
-            </div>
-
-            <div class="footer-bottom">
-              <p>&copy; 2026 Sasmitha Kalpa. All Rights Reserved.</p>
-              <p>Built with HTML5, CSS Glassmorphism & JavaScript.</p>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="./" class="logo">
+            <!-- <img src="img/wingz-logo.png" alt="Wingz Logo" class="brand-logo-img"> -->
+            <span>Sasmitha<span class="gradient-text">Kalpa</span></span>
+          </a>
+          <p>
+            Freelance Graphic Designer, Video Editor, and UI/UX Designer crafting visual excellence for global
+            clients.
+          </p>
+          <div class="social-links">
+            <a href="https://www.youtube.com/@Era_sasmitha" class="icon-btn" title="YouTube" target="_blank"
+              rel="noopener"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/iam_sasmitha_/" class="icon-btn" title="Instagram" target="_blank"
+              rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100094303121475" class="icon-btn" title="Facebook"
+              target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/sasmitha-kalpa-29b8452bb/" class="icon-btn" title="LinkedIn"
+              target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Sasmitha-Dev" class="icon-btn" title="GitHub" target="_blank" rel="noopener"><i
+                class="fab fa-github"></i></a>
           </div>
-        </footer>
+        </div>
 
-        <!-- Main JavaScript File -->
-        <script src="script.js"></script>
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services#graphic-design">Graphic Design</a></li>
+            <li><a href="services#video-editing">Video Editing</a></li>
+            <li><a href="services#ui-ux">UI/UX Design</a></li>
+            <li><a href="contact">Custom Quotation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Education & Bio</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            <strong>BSc (Hons) Software Engineering with Multimedia</strong><br>
+            Limkokwing University, Malaysia<br><br>
+            📍 Based in Sri Lanka 🇱🇰
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sasmitha Kalpa. All Rights Reserved.</p>
+        <p>Built with HTML5, CSS Glassmorphism & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
 </body>
 
 </html>
